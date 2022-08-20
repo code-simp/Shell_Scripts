@@ -1,0 +1,16 @@
+npm init -y
+npm i express body-parser nodemon env
+mkdir src && mkdir public
+touch app.js
+echo 'const Express = require("express");' > app.js
+echo 'const app = Express();' >> app.js
+echo 'const PORT = process.env.PORT || 3000;' >> app.js
+echo 'const bodyParser = require("body-parser");' >> app.js
+echo 'app.use(bodyParser.urlencoded({ extended: true }));' >> app.js
+echo 'app.use(bodyParser.json());' >> app.js
+echo 'app.get("/", function (req, res) {' >> app.js
+echo '    res.json("hello");' >> app.js
+echo '});' >> app.js
+echo 'app.listen(PORT, function () {' >> app.js
+echo 'console.log(`The server is up and running on port ${PORT}`);' >> app.js
+echo '});' >> app.js
