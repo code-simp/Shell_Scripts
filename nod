@@ -1,5 +1,5 @@
 npm init -y
-npm i express body-parser nodemon env
+npm i express body-parser nodemon env cors axios
 mkdir src && mkdir public
 touch app.js
 echo 'const Express = require("express");' > app.js
